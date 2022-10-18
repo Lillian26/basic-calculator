@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="calculator-grid">
+    <div class="screen">
+      <div>
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="output">
+        <div data-previous-operand class="previous-operand" hidden></div>
+    <div data-current-operand class="current-operand"></div>
+      </div>
+    </div>
+    <button data-all-clear disabled class="number">AC</button>
+    <button data-other-ops disabled class="number">+/−</button>
+    <button data-percentil disabled class="number">%</button>
+    <button data-operation class="operand">÷</button>
+    <button data-number class="number">7</button>
+    <button data-number class="number">8</button>
+    <button data-number class="number">9</button>
+    <button data-operation class="operand">x</button>
+    <button data-number class="number">4</button>
+    <button data-number class="number">5</button>
+    <button data-number class="number">6</button>
+    <button data-operation class="operand">−</button>
+    <button data-number class="number">1</button>
+    <button data-number class="number">2</button>
+    <button data-number class="number">3</button>
+    <button data-operation class="operand">+</button>
+    <button data-number class="span-two number">0</button>
+    <button data-number class="number">.</button>
+    <button data-equals class="operand">=</button>
+  </div>
+</body>
+
+</html>

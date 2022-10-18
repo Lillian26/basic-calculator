@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  background-color: #242b2f;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px, 10px, 20px black;
+}
+
+.calculator-grid > .number {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid grey;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > .number:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.calculator-grid > .operand {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid grey;
+  outline: none;
+  background-color: rgba(255, 165, 0, .75);
+}
+
+.calculator-grid > .operand:hover {
+  background-color: rgba(255, 165, 0, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px 10px 0 0; 
+}
+
+.output {
+  align-self: flex-end;
+  padding: 10px;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 3rem;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-right: 2px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
